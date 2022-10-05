@@ -1,10 +1,12 @@
 package com.example;
 
+import java.util.ArrayList;
+
 public interface CocheCRUD {
 
-    void save(Coche coche);
+    void save();
 
-    List<Coche coche>All();
+    ArrayList<String> findAll();
 
-    delete();
+    void delete(String coche);
 }
